@@ -1,0 +1,45 @@
+.wrapper-todo { 
+    width: 60%;
+    height: 60px;
+    margin-bottom: 5px;
+    display: flex;
+    // padding: 10px;
+    // justify-content: center;
+    // align-items: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.status-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(141, 141, 141);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+
+    .check-icon {
+        visibility: hidden;
+        width: 50%;
+        height: 60%;
+    }
+}
+.status-icon.active {
+    border: none;
+    background-color: #000;
+
+    .check-icon {
+        visibility: visible;
+    }
+}
+.content-wrapper {
+    font-size: 20px;
+
+    .tag {
+        font-size: 13px;
+        // font-weight: bold;
+    }
+}
